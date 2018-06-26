@@ -7,12 +7,12 @@ var ctx = document.getElementById("myBarChart");
 var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["February", "March", "April", "May", "June", "July"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [5312, 6251, 7841, 9821, 14984, 0],
     }],
   },
   options: {
@@ -38,8 +38,8 @@ var myLineChart = new Chart(ctx, {
 Pusher.logToConsole = true;
 
 // Configure Pusher instance
-var pusher = new Pusher('3a2a219040583d8ee1b4', {
-  cluster: 'mt1',
+var pusher = new Pusher('PUSHER_APP_KEY', {
+  cluster: 'PUSHER_APP_CLUSTER',
   encrypted: true
 });
 
