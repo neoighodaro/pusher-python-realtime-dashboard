@@ -18,22 +18,21 @@ What things you need to install the software.
 
 Clone the git repository on your computer
 
-``` $ git clone https://github.com/neoighodaro/pusher-python-realtime-dashboard```
+```
+$ git clone https://github.com/neoighodaro/pusher-python-realtime-dashboard
+```
 
 You can also download the entire repository as a zip file and unpack in on your computer if you do not have git
 
 After cloning the application, you need to install it's dependencies.
 
-``` $ cd pusher-python-realtime-dashboard
+```
+$ cd pusher-python-realtime-dashboard
 $ pip install flask
-$ pip install pusher```
-
-## Setup
-
-* Setup the database for the application
-``` $ python dbsetup.py```
-* To set the application in development environment, run the following code
-``` $ export FLASK_ENV=development```
+$ pip install pusher
+$ python dbsetup.py```
+$ export FLASK_ENV=development
+```
 
 ## Run the application
  
